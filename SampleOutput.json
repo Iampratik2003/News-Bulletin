@@ -1,0 +1,106 @@
+{
+  "status": "ok",
+  "totalResults": 10,
+  "articles": [
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "Why Spotify's big bet on Meghan Markle fell flat",
+      "description": "The end of the Duchess of Sussex's podcast on Spotify is a sign of wider change in the industry.",
+      "url": "http://www.bbc.co.uk/news/business-65936228",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/EC9B/production/_130117506_a4d3e703b94420c01752945750d4dc89b890d5d20_132_3500_19692000x1125.jpg",
+      "publishedAt": "2023-06-17T06:52:17.4070173Z",
+      "content": "When Spotify signed the Duke and Duchess of Sussex with an exclusive deal reportedly worth about $20m (£15.6m) in 2020, the royal couple were taking their first steps into the commercial world and po… [+5001 chars]"
+    },
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "Uganda: 25 killed by militants in school attack",
+      "description": "Soldiers are in pursuit of the attackers who are thought to be linked to the Islamic State group.",
+      "url": "http://www.bbc.co.uk/news/world-africa-65937484",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/0E83/production/_115651730_breaking-promo-976.png",
+      "publishedAt": "2023-06-17T06:07:17.2002451Z",
+      "content": "At least 25 people have been killed at a school in western Uganda by rebels linked to the Islamic State group.\r\nA further eight people remain in a critical condition after the attack on Lhubirira sec… [+270 chars]"
+    },
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "Smugglers 'brainwashed' my son - father of migrant",
+      "description": "Shehryar Sultan was told he would only be at sea for two to three days, before the boat he was in sank.",
+      "url": "http://www.bbc.co.uk/news/world-europe-65936996",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/DFC1/production/_130118275_p0fvqs45.jpg",
+      "publishedAt": "2023-06-17T04:07:11.7937201Z",
+      "content": "The father of Shehryar Sultan, a migrant from Pakistan who went missing after a boat he was travelling in sank off Greece, says that people smugglers \"brainwashed him\" into embarking on the dangerous… [+405 chars]"
+    },
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "Kylie Minogue scores her first top 10 hit since 2010 - but what does Padam Padam mean?",
+      "description": "The star ends a decade-long dry spell in the charts - but what does Padam Padam actually mean?",
+      "url": "http://www.bbc.co.uk/news/entertainment-arts-65932878",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/1106D/production/_130114796_km-erik-melvin-1155x770.jpg",
+      "publishedAt": "2023-06-17T03:07:16.8706083Z",
+      "content": "Kylie Minogue has scored her biggest solo hit in more than a decade with the infectious dance anthem Padam Padam.\r\nIt's the stars first song to break into the UK top 10 since All The Lovers peaked at… [+4306 chars]"
+    },
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "Dazzling ancient bronze sword found in Germany",
+      "description": "German archaeologists find a Bronze Age sword so new-looking it \"almost shines\".",
+      "url": "http://www.bbc.co.uk/news/world-europe-65936594",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/C3A1/production/_130118005_mediaitem130118004.jpg",
+      "publishedAt": "2023-06-17T02:22:14.3084005Z",
+      "content": "German archaeologists are thrilled to have dug up a Bronze Age sword more than 3,000 years old which is extraordinarily well preserved.\r\nThe bronze sword with an octagonal hilt was found in a grave i… [+792 chars]"
+    },
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "Biden confuses with 'God save the Queen' comment",
+      "description": "The president makes the remark at the end of speech calling for tougher gun control measures.",
+      "url": "http://www.bbc.co.uk/news/world-us-canada-65936994",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/91A1/production/_130118273_p0fvqmt9.jpg",
+      "publishedAt": "2023-06-17T02:22:13.0274697Z",
+      "content": "President Joe Biden was speaking at the National Safer Communities Summit in Connecticut, calling for tougher gun control laws when he seemingly confused the audience by closing his speech with the p… [+319 chars]"
+    },
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "US weather: Texas braces for heatwave after deadly tornado",
+      "description": "Record-breaking temperatures could hit Texas as the danger of a storm subsides, officials say.",
+      "url": "http://www.bbc.co.uk/news/world-us-canada-65886206",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/505B/production/_130117502_a6658c1daaf5f5408563e129b4e17a81631a53320_0_2640_19801000x750.jpg",
+      "publishedAt": "2023-06-17T00:37:12.6688683Z",
+      "content": "Media caption, Watch: Footage shows aftermath of deadly tornado in Texas\r\nMillions of people in Texas are bracing for extreme temperatures over the weekend just days after a tornado killed three peop… [+3172 chars]"
+    },
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "Six people critical and 15 dead after Canada highway crash",
+      "description": "The crash is \"one of the worst tragedies\" ever seen in the province of Manitoba, an official says.",
+      "url": "http://www.bbc.co.uk/news/world-us-canada-65931655",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/1D61/production/_130112570_gettyimages-1258721345.jpg",
+      "publishedAt": "2023-06-16T22:37:17.3564295Z",
+      "content": "A deadly highway collision in Canada in which 15 people died has left six others fighting for life, police say.\r\nA further four survivors with less serious injuries are also being treated in hospital… [+2023 chars]"
+    },
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "Daniel Ellsberg: Pentagon Papers whistleblower dies aged 92",
+      "description": "The former US military analyst's 1971 leak saw him dubbed \"the most dangerous man in America\".",
+      "url": "http://www.bbc.co.uk/news/world-us-canada-65932944",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/678D/production/_118790562_gettyimages-1310466333-594x594.jpg",
+      "publishedAt": "2023-06-16T18:37:19.4966417Z",
+      "content": "Media caption, 2022 interview: Pentagon Papers whistle-blower Daniel Ellsberg says he was a secret back-up for Wikileaks\r\nDaniel Ellsberg, the whistleblower who exposed the extent of US involvement i… [+421 chars]"
+    },
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "Ukraine war: Putin confirms first nuclear weapons moved to Belarus",
+      "description": "Russia's leader says the move is to remind anyone \"thinking of inflicting a strategic defeat on us\".",
+      "url": "http://www.bbc.co.uk/news/world-europe-65932700",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/C51D/production/_130116405_13ebd63771ee17dcb82996e2ca8d6ae7322bb1b70_0_5189_31971000x616.jpg",
+      "publishedAt": "2023-06-16T18:07:21.446466Z",
+      "content": "Russia has already stationed a first batch of tactical nuclear weapons in Belarus, Vladimir Putin says.\r\nSpeaking at an economic forum, he said they would only be used if Russia's territory or state … [+2806 chars]"
+    }
+  ]
+}
