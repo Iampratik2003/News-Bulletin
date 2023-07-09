@@ -6,7 +6,7 @@ export class Navbar extends Component {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-        <a class="navbar-brand" href="/about">NewsBulletin</a>
+        <a className="navbar-brand" href="/about">NewsBulletin</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -36,7 +36,7 @@ export class Navbar extends Component {
 
               <div className="searcbox">
               <form className="d-flex mx-4" role="search">
-                <input id="city" class="form-control me-2" type="search" placeholder="Country ISO code" aria-label="Search"/>
+                <input id="city" className="form-control me-2" type="search" placeholder="Country ISO code" aria-label="Search"/>
                 <button className="btn btn-outline-success" type="submit" id="submit">Search</button>
             </form>
             </div>

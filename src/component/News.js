@@ -63,6 +63,8 @@ export class News extends Component {
         })
     }
     
+    
+
     handleNextClick = async ()=>{
         if(this.state.page+1 > Math.ceil(this.state.totalResults/this.props.pageSize)){
 
