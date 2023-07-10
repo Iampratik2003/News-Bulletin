@@ -5,14 +5,14 @@ import PropTypes from 'prop-types'
 export class News extends Component {
 
     static defaultProps = {
-        country: 'in',
+        
         pageSize: 12,
         category: 'general',
         
     }
 
     static propTypes = {
-        country: PropTypes.string,
+        // country: PropTypes.string,
         pageSize:PropTypes.number,
         category:PropTypes.string,
         
@@ -25,6 +25,8 @@ export class News extends Component {
         super(props);
         // console.log("hello");
         this.state = {
+            print : false,
+            country: 'in',
             articles : [],
             page: 1,
             loading:'hidden',
@@ -36,7 +38,7 @@ export class News extends Component {
     
 
     async componentDidMount(){
-        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=a84d92bdd3af4c1ca494d4e7b6ad9347&page=1&pageSize=${this.props.pageSize}`;
+        let url = `https://newsapi.org/v2/top-headlines?country=${this.state.country}&category=${this.props.category}&apiKey=a84d92bdd3af4c1ca494d4e7b6ad9347&page=1&pageSize=${this.props.pageSize}`;
         this.setState({loading:'none'});
         let data = await fetch(url);
         let parsedData = await data.json();
@@ -48,9 +50,36 @@ export class News extends Component {
         })
         
     }
+
+    // countryChangeOne = ()=>{
+    //     this.setState({country : 'us'});
+    //     this.countryChange();
+    // }
     
+    countryChange = async ()=>{
+
+        // this.setState({country : 'us',})
+        
+        let url = `https://newsapi.org/v2/top-headlines?country=${this.state.country}&category=${this.props.category}&apiKey=a84d92bdd3af4c1ca494d4e7b6ad9347&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+        this.setState({loading:'none'});
+        let data = await fetch(url);
+        let parsedData = await data.json();
+        // window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        this.setState({
+            // country : 'us',
+            print : true,
+            page : this.state.page,
+            articles : parsedData.articles,
+            loading: 'hidden',
+            
+        })
+        
+
+        
+    }
+
     handlePrevClick = async ()=>{
-        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=a84d92bdd3af4c1ca494d4e7b6ad9347&page=${this.state.page-1}&pageSize=${this.props.pageSize}`;
+        let url = `https://newsapi.org/v2/top-headlines?country=${this.state.country}&category=${this.props.category}&apiKey=a84d92bdd3af4c1ca494d4e7b6ad9347&page=${this.state.page-1}&pageSize=${this.props.pageSize}`;
         this.setState({loading:'none'});
         let data = await fetch(url);
         let parsedData = await data.json();
@@ -63,20 +92,30 @@ export class News extends Component {
         })
     }
     
-    
+    changeval =(e)=> {
+        
+        // console.log(e.target.value);
+        this.setState({
+         country : e.target.value,
+         print : false,
+        })
+     //    this.setState({name : 'Nishu'});
+         
+     }
 
     handleNextClick = async ()=>{
         if(this.state.page+1 > Math.ceil(this.state.totalResults/this.props.pageSize)){
 
         }
         else{
-        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=a84d92bdd3af4c1ca494d4e7b6ad9347&page=${this.state.page+1}&pageSize=${this.props.pageSize}`;
+        let url = `https://newsapi.org/v2/top-headlines?country=${this.state.country}&category=${this.props.category}&apiKey=a84d92bdd3af4c1ca494d4e7b6ad9347&page=${this.state.page+1}&pageSize=${this.props.pageSize}`;
         // window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
         this.setState({loading:'none'});
         let data = await fetch(url);
         let parsedData = await data.json();
 
         this.setState({
+            // print:true,
             page : this.state.page+1,
             articles : parsedData.articles,
             loading: 'hidden',
@@ -86,7 +125,20 @@ export class News extends Component {
 
   render() {
     return (
-    <div className='container my-3'>
+
+    <div className='container my-2'>
+        {/* <div className="text-center"> */}
+        {/* <form className="d-flex mx-4"> */}
+        {/* <form> */}
+        <div className="d-flex justify-content-center my-4 ">
+        <input  onChange={this.changeval} className="rounded-top rounded-bottom border border-dark form-control w-25" placeholder="in (Country ISO code)" aria-label="Search"/>
+        {/* </div> */}
+        {/* <div className="text-center"> */}
+        <button className="btn btn-outline-success mx-3" onClick={this.countryChange} type="submit" id="submit">Search</button>
+        </div>
+        {/* </form> */}
+        {/* </div> */}
+        {/* </form> */}
         <h2 className="text-center">NewsBulletin - Top Updates on {this.capitalize(this.props.category)} Category</h2>
         <div className={`visually-${this.state.loading} text-center`}>
         <div className="spinner-border" role="status">

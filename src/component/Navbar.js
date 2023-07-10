@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+// import News from './News'
 
 export class Navbar extends Component {
   render() {
@@ -35,10 +36,12 @@ export class Navbar extends Component {
               </li>
 
               <div className="searcbox">
-              <form className="d-flex mx-4" role="search">
-                <input id="city" className="form-control me-2" type="search" placeholder="Country ISO code" aria-label="Search"/>
-                <button className="btn btn-outline-success" type="submit" id="submit">Search</button>
-            </form>
+              {/* <form className="d-flex mx-4" role="search"> */}
+              {/* <div className="d-flex mx-4">
+                <input id="city" onChange={this.changeval} className="form-control me-2" type="search" placeholder="Country ISO code" aria-label="Search"/>
+                <button className="btn btn-outline-success" onClick={this.countryChange} type="submit" id="submit">Search</button>
+                </div> */}
+            {/* </form> */}
             </div>
 
               <div className={`form-check form-switch text-${this.props.mode==='light'? 'dark': 'light'}`} >
