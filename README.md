@@ -1,5 +1,8 @@
-News-Bulletin
-![Screenshot (27)](https://github.com/Iampratik2003/News-Bulletin/assets/137315723/8e76e0e6-88b5-4ef0-a555-812fc1c6600c)# Getting Started with Create React App
+![Screenshot (27)](https://github.com/Iampratik2003/News-Bulletin/assets/137315723/5fa32674-d3dd-41b2-b2d5-ab4823bcdc3e)News-Bulletin
+![Screenshot (28)](https://github.com/Iampratik2003/News-Bulletin/assets/137315723/e7dcbb4a-3765-400c-ba24-e385a68015c4)
+
+
+# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
