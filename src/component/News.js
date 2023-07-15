@@ -25,6 +25,7 @@ export class News extends Component {
         super(props);
         // console.log("hello");
         this.state = {
+            newCountry : 'in',
             print : false,
             country: 'in',
             articles : [],
@@ -51,11 +52,9 @@ export class News extends Component {
         
     }
 
-    // countryChangeOne = ()=>{
-    //     this.setState({country : 'us'});
-    //     this.countryChange();
-    // }
     
+    //Chaging country with ISO Codes.
+
     countryChange = async ()=>{
 
         // this.setState({country : 'us',})
@@ -66,7 +65,8 @@ export class News extends Component {
         let parsedData = await data.json();
         // window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
         this.setState({
-            // country : 'us',
+            country : this.state.country,
+            newCountry : this.state.country.length===1?'Write an ISO Code':this.state.country,
             print : true,
             page : this.state.page,
             articles : parsedData.articles,
@@ -95,11 +95,11 @@ export class News extends Component {
     changeval =(e)=> {
         
         // console.log(e.target.value);
+        e.target.value?this.setState({country : e.target.value}):this.setState({country:this.state.country});
         this.setState({
-         country : e.target.value,
+        //  country : e.target.value,
          print : false,
         })
-     //    this.setState({name : 'Nishu'});
          
      }
 
@@ -127,25 +127,19 @@ export class News extends Component {
     return (
 
     <div className='container my-2'>
-        {/* <div className="text-center"> */}
-        {/* <form className="d-flex mx-4"> */}
-        {/* <form> */}
+
         <div className="d-flex justify-content-center my-4 ">
         <input  onChange={this.changeval} className="rounded-top rounded-bottom border border-dark form-control w-25" placeholder="in (Country ISO code)" aria-label="Search"/>
-        {/* </div> */}
-        {/* <div className="text-center"> */}
+      
         <button className="btn btn-outline-success mx-3" onClick={this.countryChange} type="submit" id="submit">Search</button>
         </div>
-        {/* </form> */}
-        {/* </div> */}
-        {/* </form> */}
-        <h2 className="text-center">NewsBulletin - Top Updates on {this.capitalize(this.props.category)} Category</h2>
+       
+        <h2 className="text-center">NewsBulletin - Top Updates on {this.capitalize(this.props.category)} Category ({(this.state.newCountry).toUpperCase()})</h2>
         <div className={`visually-${this.state.loading} text-center`}>
         <div className="spinner-border" role="status">
         <span className="visually-hidden">Loading...</span>
         </div>
         </div>
-        {/* {this.state.loading && <Spin/>} */}
 
         <div className="row">
             {this.state.loading==='hidden' && this.state.articles.map((element)=>{
